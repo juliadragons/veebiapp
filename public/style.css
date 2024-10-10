@@ -1,0 +1,45 @@
+h1 {
+    color: blue;
+}
+
+.cat {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+}
+
+.konteiner {
+    display: flex; /* a flex container */
+    flex-wrap: wrap; /* The flex items will wrap onto a new line if needed */
+}
+
+.matk {
+    width: 20rem; /* rem units are relative to the font size of the root element (16px by default) */
+}
+
+.matkapilt {
+    width: 40%;
+    display: block;
+}
+
+.uudised {
+    display: flex; /* a flex container */
+    flex-wrap: wrap; /* The flex items will wrap onto a new line if needed */
+    margin-top: 2rem;
+    
+    .uudis-container {
+        width: 30rem; /* rem units are relative to the font size of the root element (16px by default) */
+        text-align: center; /* Centers all inline and block elements like img, h3, p, and a */
+        margin: 0 auto; /* Centers the container itself if it has a defined width */
+
+        .uudispilt {
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }       
+    }
+}
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Matkaklubi matkad</h1>
+    <div class = "konteiner">
+        <% for (let i=0; i < matkad.length; i++) { %>
+        <div class="matk">
+            <img class="matkapilt" src="<%=matkad[i].pildiUrl %>">
+            <h3><%=matkad[i].nimetus %></h3>
+            <p><%=matkad[i].kirjeldus %></p> 
+            <p>Osalejad: <%=matkad[i].osalejad.length %></p>    
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>
